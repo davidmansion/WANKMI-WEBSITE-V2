@@ -652,6 +652,36 @@
             font-size: 1.5rem;
         }
         
+        /* Logo Image Container */
+        .logo-image-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        
+        .logo-image-wrapper {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 20px;
+            max-width: 500px;
+            text-align: center;
+            border: 3px dashed var(--accent2);
+        }
+        
+        .logo-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .logo-caption {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
         /* Responsive Design */
         @media (max-width: 900px) {
             .hero h1 {
@@ -718,11 +748,11 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
         <div class="container">
-            <div class="logo-display">
-                <div class="logo-container">
-                    <div class="logo-text logo-solana">SOLANA</div>
-                    <div class="logo-text logo-token">WANKMI</div>
-                    <div class="logo-text logo-coin">SOLANA COIN</div>
+            <!-- Logo Display Section -->
+            <div class="logo-image-container">
+                <div class="logo-image-wrapper">
+                    <img src="https://via.placeholder.com/400x200/1A1A2E/FFD166?text=YOUR+LOGO+HERE" alt="WANKMI Logo" class="logo-image">
+                    <div class="logo-caption">Your Official WANKMI Token Logo</div>
                 </div>
             </div>
             
